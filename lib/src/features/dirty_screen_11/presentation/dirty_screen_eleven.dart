@@ -1,3 +1,4 @@
+import 'package:dirty_code/src/features/dirty_screen_11/presentation/appointment_screen.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenEleven extends StatelessWidget {
@@ -8,38 +9,15 @@ class DirtyScreenEleven extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Dirty Screen #11"),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            ListTile(
-              leading: const Icon(Icons.event),
-              title: const Text('Abrissparty'),
-              subtitle: const Text('Party'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(Icons.event),
-              title: const Text('Apres Ski'),
-              subtitle: const Text('Party'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(Icons.event),
-              title: const Text('Oktoberfest'),
-              subtitle: const Text('Party'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(Icons.event),
-              title: const Text('Club night'),
-              subtitle: const Text('Party'),
-              trailing: const Icon(Icons.arrow_forward),
-              onTap: () {},
-            ),
+           AppointmentScreen(title: 'Abrissparty'),
+            AppointmentScreen(title: 'Apres Ski'),
+             AppointmentScreen(title: 'Oktoberfest'),
+              AppointmentScreen(title: 'Club night'),
+            
           ],
         ),
       ),

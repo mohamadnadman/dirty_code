@@ -1,3 +1,4 @@
+import 'package:dirty_code/src/features/dirty_screen_10/presentation/chat_screen.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenTen extends StatelessWidget {
@@ -12,66 +13,10 @@ class DirtyScreenTen extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    backgroundImage: NetworkImage('https://picsum.photos/100'),
-                  ),
-                  SizedBox(width: 8),
-                  Text(
-                    'Hans',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    backgroundImage: NetworkImage('https://picsum.photos/101'),
-                  ),
-                  SizedBox(width: 8),
-                  Text(
-                    'Helga',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    backgroundImage: NetworkImage('https://picsum.photos/102'),
-                  ),
-                  SizedBox(width: 8),
-                  Text(
-                    'Udo',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    backgroundImage: NetworkImage('https://picsum.photos/103'),
-                  ),
-                  SizedBox(width: 8),
-                  Text(
-                    'Olgun',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                ],
-              ),
-            ),
+            ChatScreen(text: 'Hans', fotos: 'https://picsum.photos/100'),
+            ChatScreen(text: 'Helga', fotos: 'https://picsum.photos/101'),
+            ChatScreen(text: 'Udo', fotos: 'https://picsum.photos/102'),
+            ChatScreen(text: 'Olgun', fotos: 'https://picsum.photos/103'),
           ],
         ),
       ),
